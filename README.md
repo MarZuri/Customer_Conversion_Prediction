@@ -1,4 +1,3 @@
-# Dự đoán tỷ lệ chuyển đổi của khách hàng 
 - **Data Source:** [Marketing Promotion Campaign Uplift Modelling](https://www.kaggle.com/datasets/davinwijaya/customer-retention?fbclid=IwY2xjawHeNDhleHRuA2FlbQIxMAABHWyLPXhPlUlKiUWAZVWv5eNClppVT-AFlQ9-Qsyltcbvqc0z95cOClxxqw_aem_tUVt0yIy8o5Cn1O2GF6OCg)
 - **Structure:**
   - ```recency```: Số tháng kể từ lần mua hàng cuối cùng của khách hàng. *Ví dụ: recency = 2: khách hàng đã mua lần cuối cách đây 2 tháng.*
@@ -22,22 +21,20 @@
 - **Business Goals:**
   - Tăng tỷ lệ chuyển đổi khách hàng: Công ty muốn tối ưu hóa ROI (Return on Investment).
   - Tăng doanh thu: Ưu tiên tiếp cận và chuyển đổi những khách hàng có giá trị giao dịch lịch sử cao.
-- **Specific Questions:**
-  - [1] Nhóm khách hàng nào có xác suất chuyển đổi cao nhất?
-  - [2] Các yếu tố nào ảnh hưởng lớn nhất đến việc chuyển đổi?
-  - [3] Cần điều chỉnh ưu đãi như thế nào để tăng chuyển đổi?
+- **Specific Questions:** Nhóm khách hàng nào có xác suất chuyển đổi cao nhất?
+  
 
 
-# [QUESTION 1] NHÓM KHÁCH HÀNG NÀO CÓ XÁC SUẤT CHUYỂN ĐỔI CAO NHẤT?
-## 1.1. Ảnh hưởng của việc sử dụng ưu đãi trước đây
+# [QUESTION] NHÓM KHÁCH HÀNG NÀO CÓ XÁC SUẤT CHUYỂN ĐỔI CAO NHẤT?
+## 1. Ảnh hưởng của việc sử dụng ưu đãi trước đây
 Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ lệ không chuyển đổi là 85.32%.\
-\
+
 ![1](https://github.com/user-attachments/assets/ab844b35-469f-4a0d-ac82-4535f6446bfb)
 
 Đáng chú ý, toàn bộ khách hàng chuyển đổi đều đã từng sử dụng các ưu đãi trước đây. Trong đó, 44.1% khách hàng chỉ sử dụng Buy One Get One, 38.8% chỉ sử dụng Discount, và 17.1% sử dụng cả hai loại ưu đãi.\
 *=> Điều này cho thấy nhóm khách hàng chuyển đổi chủ yếu đến từ những người chỉ sử dụng một loại ưu đãi, đặc biệt là Buy One Get One.*\
 *=> Buy One Get One nên được đầu tư và phát triển trong các chiến dịch tiếp thị tiếp theo để thu hút và giữ chân khách hàng.*\
-\
+
 ![2](https://github.com/user-attachments/assets/1f7675b8-586f-478e-a29d-7be13b656f74)
 
 ### Tóm lại với khách hàng sử dụng ưu đãi trước đây:
@@ -46,8 +43,8 @@ Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ l�
   
 ---
 
-## 1.2. Ảnh hưởng của khu vực địa lý
-**Tổng quát:**
+## 2. Ảnh hưởng của khu vực địa lý
+**Định hướng:**
 - Kiểm tra tỉ lệ chuyển đổi trung bình của từng khu vực để biết khu vực nào có tỷ lệ chuyển đổi cao nhất?
 - Đối với mỗi khu vực:
   - Kiểm tra xem loại offer nào hiệu quả nhất? 
@@ -70,6 +67,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 - Multichannel: 26.02%
 - Web: 24.15%
 - Phone: 20.27%\
+
 *=> Đối với ưu đãi Discount thì Multichannel đạt được tỷ lệ chuyển đổi cao nhất*
 
 
@@ -77,6 +75,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 - Web: 20.78%
 - Multichannel: 18.88%
 - Phone: 15.55%\
+
 *=> Đối với ưu đãi Buy One Get One thì Web mang lại hiệu quả cao hơn*
 
 ![5](https://github.com/user-attachments/assets/255563b8-9078-431f-81e0-47eab7a9d0eb)
@@ -99,13 +98,16 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 **Theo lịch sử giao dịch (history) và số tháng kể từ lần mua hàng cuối cùng (recency) cho thấy:**
 - Discount:
   - History: 1001-1500(USD)
-  - Recency: 7-12 tháng
-=> Đạt tỷ lệ cao nhất (33.33%).
+  - Recency: 7-12 tháng\
+=> Đạt tỷ lệ cao nhất (33.33%)
 
-- Buy One Get One:
+- Buy One Get One (BOGO):
   - History: 501-1000(USD)
-  - Recency: 4-6 tháng 
-=> Đạt tỷ lệ chuyển đổi cao nhất (26.6%). 
+  - Recency: 4-6 tháng
+    
+=> Đạt tỷ lệ chuyển đổi cao nhất (26.6%)
+
+<img width="1004" alt="Screenshot 2025-01-15 at 20 51 00" src="https://github.com/user-attachments/assets/69eeaf05-b6cf-4bc8-92e1-34c25f687c69" />
 
 
 **Tóm lại trong Rural:**
@@ -117,9 +119,9 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
   - Với Buy One Get One: Tập trung vào nhóm có tổng giá trị giao dịch trong quá khứ từ 501-1000 USD và đã mua lần cuối cách đây từ 4-6 tháng.
 
 ### Phân tích khu vực Suburban
-Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Discount.\
-Discount (17.335%) > Buy One Get One (14.787%) > No Offer (9.901%).
+Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Discount. Discount (17.335%) > Buy One Get One (14.787%) > No Offer (9.901%).
 
+![11](https://github.com/user-attachments/assets/d4e78df3-be05-4da5-a84b-f9f87bbc3825)
 
 **Hiệu quả của từng kênh với ưu đãi Discount:**
 - Multichannel: 20.42%
@@ -133,6 +135,8 @@ Discount (17.335%) > Buy One Get One (14.787%) > No Offer (9.901%).
 
 *=> Multichannel là kênh tốt nhất cho cả hai ưu đãi Discount và Buy One Get One*
 
+![12](https://github.com/user-attachments/assets/0a035f4c-4e70-478f-9c0d-063176fea498)
+
 
 **So sánh khách hàng sử dụng ưu đãi trước đây:**
 - Discount:
@@ -141,21 +145,29 @@ Discount (17.335%) > Buy One Get One (14.787%) > No Offer (9.901%).
 
 - Buy One Get One:
   - Đã sử dụng: 15.75%
-  - Chưa sử dụng: 11.85%.
+  - Chưa sử dụng: 11.85%\
+
 *=> Ở cả hai ưu đãi thì nhóm khách hàng đã sử dụng ưu đãi đều > nhóm khách hàng chưa sử dụng ưu đãi trước đây*
+
+<img width="917" alt="Screenshot 2025-01-16 at 00 35 27" src="https://github.com/user-attachments/assets/116d4587-1296-4155-8d7e-d9a76fd0c71a" />
 
 
 
 **Lịch sử giao dịch (history) và số tháng kể từ lần mua hàng cuối cùng (recency) cho thấy:**
 - Discount:
   - History: 1001-1500 (USD)
-  - Recency: 4-6 tháng
+  - Recency: 4-6 tháng\
+    
 *=> Đạt tỷ lệ cao nhất (100%)*
 
 - Buy One Get One:
   - History: 1001-1500(USD)
-  - Recency: 4-6 tháng 
+  - Recency: 4-6 tháng\
+  
 *=> Đạt tỷ lệ chuyển đổi cao nhất (28.26%)*
+
+<img width="1047" alt="Screenshot 2025-01-16 at 00 39 37" src="https://github.com/user-attachments/assets/4037fd64-43ae-4b8f-8c24-f86c841a80a6" />
+
 
 **Tóm lại trong Suburban:**
 - Discount và Multichannel là sự kết hợp hiệu quả nhất để tăng tỷ lệ chuyển đổi.
@@ -164,21 +176,26 @@ Discount (17.335%) > Buy One Get One (14.787%) > No Offer (9.901%).
 - Nhóm khách hàng có tỷ lệ chuyển đổi cao ở cả 2 ưu đãi là nhóm có tổng giá trị giao dịch từ 1001-1500 USD và đã mua hàng lần cuối cách đây từ 4-6 tháng.
 
 ### Phân tích khu vực Urban
-Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Discount.\
-Discount (17.646%) > Buy One Get One (14.375%) > No Offer (9.681%).
- 
+Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Discount. Discount (17.646%) > Buy One Get One (14.375%) > No Offer (9.681%).
+
+![17](https://github.com/user-attachments/assets/8ba069a9-c556-470c-b0c8-1520fc4f18ef)
+
 
 **Hiệu quả của từng kênh với ưu đãi Discount:**
-- Multichannel: 20.26% (cao nhất).
+- Multichannel: 20.26% 
 - Web: 18.74%.
-- Phone: 15.79%.
+- Phone: 15.79%
+  
 => Multichannel là kênh hiệu quả khi kết hợp với ưu đãi Discount
 
 **Hiệu quả của từng kênh với ưu đãi Buy One Get One:**
-- Web: 16.07% (cao nhất).
-- Multichannel: 16.00%.
-- Phone: 12.29%.
+- Web: 16.07% 
+- Multichannel: 16.00%
+- Phone: 12.29%
+
 *=> Web là kênh hiệu quả khi kết hợp với ưu đãi Buy One Get One*
+
+![19](https://github.com/user-attachments/assets/61769a75-9d6b-4147-9db5-623e31822bff)
 
 **So sánh khách hàng sử dụng ưu đãi trước đây:**
 - Discount:
@@ -186,22 +203,27 @@ Discount (17.646%) > Buy One Get One (14.375%) > No Offer (9.681%).
   - Chưa sử dụng: 13.80%
 - Buy One Get One:
   - Đã sử dụng: 15.46%.
-  - Chưa sử dụng: 12.00%.
+  - Chưa sử dụng: 12.00%\
+
 *=> Tỷ lệ chuyển đổi của nhóm đã từng dùng ưu đãi trước đây đều cao hơn nhóm chưa từng dùng*
 
-
+<img width="1036" alt="Screenshot 2025-01-16 at 00 45 42" src="https://github.com/user-attachments/assets/4f63003c-185a-4b3f-b1e1-d266b86a6fb1" />
 
 
 **Lịch sử giao dịch (history) và số tháng kể từ lần mua hàng cuối cùng (recency) cho thấy:**
 - Discount:
   - History: >3000(USD) và 2501-3000 (USD)
   - Recency: 0-3 tháng và 7-12 tháng
-=> Cả 2 nhóm đều đạt tỷ lệ cao nhất (100%).
+
+=> Cả 2 nhóm đều đạt tỷ lệ cao nhất (100%)
+
 - Buy One Get One:
   - History: 1501-2000(USD)
-  - Recency: 7-12 tháng 
-=> Đạt tỷ lệ chuyển đổi cao nhất (100%).
+  - Recency: 7-12 tháng
 
+=> Đạt tỷ lệ chuyển đổi cao nhất (100%)
+
+<img width="1038" alt="Screenshot 2025-01-16 at 00 48 35" src="https://github.com/user-attachments/assets/9bf0dc87-1ec2-431a-80b6-9768e058dc78" />
 
 
 **Tóm lại trong Urban:**
@@ -224,32 +246,40 @@ Discount (17.646%) > Buy One Get One (14.375%) > No Offer (9.681%).
 ---
 
 ## 1.3. Ảnh hưởng của kênh (channel)
-**Tổng quát:** Xác định xem kênh nào hiệu quả nhất khi triển khai các ưu đãi tại các khu vực.
+**Định hướng:** Xác định xem kênh nào hiệu quả nhất khi triển khai các ưu đãi tại các khu vực.
 
 **Hiệu quả tổng thể của các kênh:**
 - Multichannel: 17.17%
 - Web: 15.94%
 - Phone: 12.72%
 *=> Hiệu quả tổng thể của các kênh cho thấy Multichannel dẫn đầu*
-\
-\
+
+
 Khi xét ưu đãi trên từng kênh, Discount hiệu quả nhất trên cả Multichannel (21.15%) và Web (19.44%)
 *=> Khẳng định vai trò quan trọng của hai kênh này trong việc thúc đẩy chuyển đổi*
 
-Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả nhất tại Rural, trong khi Multichannel tiếp tục dẫn đầu tại Suburban và Urban. Tuy nhiên, phân tích thống kê cho thấy không có sự khác biệt lớn giữa các kênh (p-value > 0.05), mặc dù Multichannel nổi bật hơn trong việc tăng tỷ lệ chuyển đổi tại các khu vực Rural và Suburban. 
+![28](https://github.com/user-attachments/assets/00ced097-2654-498d-9cb7-272ce6039514)
+
+Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả nhất tại Rural, trong khi Multichannel tiếp tục dẫn đầu tại Suburban và Urban. Tuy nhiên, phân tích thống kê cho thấy không có sự khác biệt lớn giữa các kênh (p-value > 0.05), mặc dù Multichannel nổi bật hơn trong việc tăng tỷ lệ chuyển đổi tại các khu vực Rural và Suburban.\
 *=> Nhấn mạnh tầm quan trọng của việc tối ưu hóa Multichannel, đặc biệt tại các khu vực trọng điểm*
+
+![29](https://github.com/user-attachments/assets/cde1be19-bd36-4583-81b1-0c80df733244)
+
 
 ### Tóm lại ảnh hưởng của kênh:
 **[1] Multichannel:**
 - Tỷ lệ chuyển đổi trung bình: 17.17%.
 - Là kênh hiệu quả nhất, dẫn đầu trong cả Discount và Buy One Get One, đặc biệt mạnh tại các khu vực Rural và Suburban.
 - Không có sự khác biệt lớn về hiệu quả giữa các khu vực nhưng luôn dẫn đầu tỷ lệ chuyển đổi.
+  
 **[2] Web:**
 - Tỷ lệ chuyển đổi trung bình: 15.94%.
 - Hiệu quả thứ hai khi kết hợp với ưu đãi Discount, đặc biệt là khách hàng tại khu vực Rural 
+
 **[3] Phone:**
 - Tỷ lệ chuyển đổi trung bình: 12.72%.
 - Kênh ít hiệu quả nhất, phù hợp hơn với khách hàng Rural không sử dụng ưu đãi.
+
 **Đặc biệt:**
 - Multichannel nên là ưu tiên hàng đầu để tối ưu hóa tỷ lệ chuyển đổi.
 - Web là kênh quan trọng thứ hai, đặc biệt khi triển khai ưu đãi Discount.
@@ -266,6 +296,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
   - Ưu tiên nhóm thứ hai: 
     - Giá trị giao dịch: 2501-3000 USD
     - Lần cuối mua cách đây: 7-12 tháng
+
 
 **[2] Nhóm khách hàng tiềm năng thứ hai:**
 - Khu vực: Suburban.
