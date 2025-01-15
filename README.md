@@ -31,7 +31,8 @@
 # [QUESTION 1] NHÓM KHÁCH HÀNG NÀO CÓ XÁC SUẤT CHUYỂN ĐỔI CAO NHẤT?
 ## 1.1. Ảnh hưởng của việc sử dụng ưu đãi trước đây
 Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ lệ không chuyển đổi là 85.32%.\
-IMAGE
+<img width="311" alt="Screenshot 2025-01-15 at 17 26 43" src="https://github.com/user-attachments/assets/ace2d094-5c9d-413e-9f17-e6bccd1b0013" />
+
 
 Đáng chú ý, toàn bộ khách hàng chuyển đổi đều đã từng sử dụng các ưu đãi trước đây.\
 IMAGE
