@@ -31,18 +31,16 @@
 # [QUESTION 1] NHÓM KHÁCH HÀNG NÀO CÓ XÁC SUẤT CHUYỂN ĐỔI CAO NHẤT?
 ## 1.1. Ảnh hưởng của việc sử dụng ưu đãi trước đây
 Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ lệ không chuyển đổi là 85.32%.\
-<img width="311" alt="Screenshot 2025-01-15 at 17 26 43" src="https://github.com/user-attachments/assets/ace2d094-5c9d-413e-9f17-e6bccd1b0013" />
+\
+![1](https://github.com/user-attachments/assets/ab844b35-469f-4a0d-ac82-4535f6446bfb)
 
+Đáng chú ý, toàn bộ khách hàng chuyển đổi đều đã từng sử dụng các ưu đãi trước đây. Trong đó, 44.1% khách hàng chỉ sử dụng Buy One Get One, 38.8% chỉ sử dụng Discount, và 17.1% sử dụng cả hai loại ưu đãi.\
+*=> Điều này cho thấy nhóm khách hàng chuyển đổi chủ yếu đến từ những người chỉ sử dụng một loại ưu đãi, đặc biệt là Buy One Get One.*\
+*=> Buy One Get One nên được đầu tư và phát triển trong các chiến dịch tiếp thị tiếp theo để thu hút và giữ chân khách hàng.*\
+\
+![2](https://github.com/user-attachments/assets/1f7675b8-586f-478e-a29d-7be13b656f74)
 
-Đáng chú ý, toàn bộ khách hàng chuyển đổi đều đã từng sử dụng các ưu đãi trước đây.\
-IMAGE
-
-Trong đó, 44.1% khách hàng chỉ sử dụng Buy One Get One, 38.8% chỉ sử dụng Discount, và 17.1% sử dụng cả hai loại ưu đãi.\
-=> Điều này cho thấy nhóm khách hàng chuyển đổi chủ yếu đến từ những người chỉ sử dụng một loại ưu đãi, đặc biệt là Buy One Get One.\
-=> Buy One Get One nên được đầu tư và phát triển trong các chiến dịch tiếp thị tiếp theo để thu hút và giữ chân khách hàng.\
-IMAGE
-
-**Tóm lại với khách hàng sử dụng ưu đãi trước đây (used_discount hoặc used_bogo):**
+### Tóm lại với khách hàng sử dụng ưu đãi trước đây:
 - Tỷ lệ chuyển đổi trung bình: 100% khách hàng chuyển đổi đã sử dụng ưu đãi trước đây.
 - Khách hàng sử dụng "Buy One Get One" có xác suất chuyển đổi cao hơn 1.45% so với khách hàng chỉ sử dụng Discount => Không có sự chênh lệch quá nhiều.
   
@@ -57,12 +55,15 @@ IMAGE
   - Kiểm tra xem liệu khách hàng đã từng sử dụng ưu đãi trước đây có chuyển đổi tốt hơn hay không?
   - Các yếu tố khác như history hay (recency) có làm thay đổi hiệu quả của từng loại offer không?
 
-Tỷ lệ chuyển đổi trung bình theo khu vực cho thấy Rural có hiệu quả cao nhất với 18.81%, vượt trội so với Suburban (13.99%) và Urban (13.90%). 
+Tỷ lệ chuyển đổi trung bình theo khu vực cho thấy Rural có hiệu quả cao nhất với 18.81%, vượt trội so với Suburban (13.99%) và Urban (13.90%).
+
+![3](https://github.com/user-attachments/assets/2569637e-904a-481b-b5a6-a92381c19050)
 
 
 ### Phân tích khu vực Rural
-Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discount.\
-Discount (22.695%) > Buy One Get One (18.264%) > No Offer (15.355%).
+Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discount. Discount (22.695%) > Buy One Get One (18.264%) > No Offer (15.355%).
+
+![4](https://github.com/user-attachments/assets/3e9e2cbb-a88c-41d1-b632-171e64122ae6)
 
 
 **Hiệu quả của từng kênh với ưu đãi Discount:**
@@ -76,7 +77,9 @@ Discount (22.695%) > Buy One Get One (18.264%) > No Offer (15.355%).
 - Web: 20.78%
 - Multichannel: 18.88%
 - Phone: 15.55%\
-\*=> Đối với ưu đãi Buy One Get One thì Web mang lại hiệu quả cao hơn*
+*=> Đối với ưu đãi Buy One Get One thì Web mang lại hiệu quả cao hơn*
+
+![5](https://github.com/user-attachments/assets/255563b8-9078-431f-81e0-47eab7a9d0eb)
 
 
 **So sánh khách hàng sử dụng ưu đãi trước đây:**
@@ -87,9 +90,10 @@ Discount (22.695%) > Buy One Get One (18.264%) > No Offer (15.355%).
 - Buy One Get One:
   - Đã sử dụng: 20.51%
   - Chưa sử dụng: 16.76%
-  - 
+    
 *=> Tỷ lệ chuyển đổi của nhóm đã từng dùng ưu đãi trước đây đều cao hơn nhóm chưa từng dùng*
 
+<img width="945" alt="Screenshot 2025-01-15 at 20 40 30" src="https://github.com/user-attachments/assets/e67e4d17-8f8a-4dc0-a9e8-94a9e40fd6ed" />
 
 
 **Theo lịch sử giao dịch (history) và số tháng kể từ lần mua hàng cuối cùng (recency) cho thấy:**
