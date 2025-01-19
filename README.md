@@ -328,7 +328,8 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 ---
 # Xây dựng model dự đoán tỷ lệ khách hàng chuyển đổi
 ## Xác định dạng bài toán
-**Yêu cầu:** Dự đoán liệu khách hàng có chuyển đổi (conversion) hay không dựa trên các đặc trưng đầu vào.\
+**Yêu cầu:** Dự đoán liệu khách hàng có chuyển đổi (conversion) hay không dựa trên các đặc trưng đầu vào.
+
 **Dạng bài toán:** Phân loại nhị phân, với nhãn mục tiêu:
   - ```conversion = 0```: Không chuyển đổi
   - ```conversion = 1:``` Chuyển đổi
@@ -338,7 +339,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 ![Image](https://github.com/user-attachments/assets/59f7620d-c09d-4b63-87a3-1232fa3c4e4f)
 
 ## Tổng quan dữ liệu
-**Tổng số mẫu:** 64,000\
+**Tổng số mẫu:** 64,000
 
 **Phân phối nhãn mục tiêu:**
   - ```conversion = 0```: 54,606 mẫu (85.3%)
@@ -352,11 +353,15 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 **Làm sạch dữ liệu (Data Cleaning):**
   - Kiểm tra và xử lý các giá trị bị thiếu.
   - Xác minh định dạng của các cột dữ liệu, đảm bảo tính nhất quán và phù hợp với các yêu cầu đầu vào của mô hình.
+
 **Mã hóa các biến phân loại:** Các cột zip_code, channel, offer được mã hóa bằng LabelEncoder để chuyển đổi thành dữ liệu số.
+
 **Tách và chia tập dữ liệu:** Tập dữ liệu ban đầu được tách thành 2 tập data khác nhau:
-  - *data_1:* Sử dụng để huấn luyện mô hình và tối ưu hóa tham số.\
-        - Train: 10,500 mẫu
-        - Test: 2,100 mẫu
+  - *data_1:* Sử dụng để huấn luyện mô hình và tối ưu hóa tham số.
+    
+    - Train: 10,500 mẫu
+    - Test: 2,100 mẫu
+      
   - *data_2:* Sử dụng để kiểm tra độ chính xác của mô hình sau khi huấn luyện.
 
 ## Lựa chọn mô hình và tối ưu hoá tham số
@@ -388,20 +393,22 @@ Tương tự như trên, sau khi xử lý imbalanced data thì sử dụng tập
       - random forest roc score on test:  0.5516274999999999
       - random forest f1 score on test:  0.07311827956989247
 
-\
+
   - **SMOTE method:  BorderlineSMOTE**
       - random forest roc score on test:  0.548045
       - random forest f1 score on test:  0.05472636815920398
 
-\
+
   - **SMOTE method:  SVMSMOTE**
       - random forest roc score on test:  0.5521325
       - random forest f1 score on test:  0.06829268292682927
 
-\
+
   - **SMOTE method:  ADASYN**
     - random forest roc score on test:  0.5502400000000001
     - random forest f1 score on test:  0.07391304347826087
+   
+  
 
 ### Weighted Random Forest
 Đối với phương pháp này thì kết quả nhận được là:
