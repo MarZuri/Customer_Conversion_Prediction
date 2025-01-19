@@ -49,7 +49,6 @@ Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ l�
   - Các yếu tố khác như history hay (recency) có làm thay đổi hiệu quả của từng loại offer không?
 
 \
-\
 Tỷ lệ chuyển đổi trung bình theo khu vực cho thấy Rural có hiệu quả cao nhất với 18.81%, vượt trội so với Suburban (13.99%) và Urban (13.90%).
 
 ![3](https://github.com/user-attachments/assets/2569637e-904a-481b-b5a6-a92381c19050)
@@ -67,6 +66,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 - Phone: 20.27%
 
 *=> Đối với ưu đãi Discount thì Multichannel đạt được tỷ lệ chuyển đổi cao nhất*
+
 \
 **Hiệu quả của từng kênh với ưu đãi Buy One Get One:**
 - Web: 20.78%
@@ -82,6 +82,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 - Discount:
   - Đã sử dụng: 19.42%
   - Chưa sử dụng: 18.07%
+    
 \
 - Buy One Get One:
   - Đã sử dụng: 20.51%
@@ -94,9 +95,11 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
 
 **Theo lịch sử giao dịch (history) và số tháng kể từ lần mua hàng cuối cùng (recency) cho thấy:**
 - Discount:
-  - History: 1001-1500(USD)
-  - Recency: 7-12 tháng\
+  - History: 1001-1500 (USD)
+  - Recency: 7-12 tháng
+    
 => Đạt tỷ lệ cao nhất (33.33%)
+
 \
 - Buy One Get One (BOGO):
   - History: 501-1000(USD)
@@ -140,6 +143,7 @@ Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Di
   - Đã sử dụng: 14.19%
   - Chưa sử dụng: 13.76%
 
+\
 - Buy One Get One:
   - Đã sử dụng: 15.75%
   - Chưa sử dụng: 11.85%
@@ -157,6 +161,7 @@ Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Di
     
 *=> Đạt tỷ lệ cao nhất (100%)*
 
+\
 - Buy One Get One:
   - History: 1001-1500(USD)
   - Recency: 4-6 tháng
@@ -185,6 +190,7 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
   
 *=> Multichannel là kênh hiệu quả khi kết hợp với ưu đãi Discount*
 
+\
 **Hiệu quả của từng kênh với ưu đãi Buy One Get One:**
 - Web: 16.07% 
 - Multichannel: 16.00%
@@ -198,6 +204,8 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
 - Discount:
   - Đã sử dụng: 13.99%
   - Chưa sử dụng: 13.80%
+
+\
 - Buy One Get One:
   - Đã sử dụng: 15.46%.
   - Chưa sử dụng: 12.00%
@@ -214,6 +222,7 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
 
 *=> Cả 2 nhóm đều đạt tỷ lệ cao nhất (100%)*
 
+\
 - Buy One Get One:
   - History: 1501-2000(USD)
   - Recency: 7-12 tháng
@@ -252,14 +261,14 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
   
 *=> Hiệu quả tổng thể của các kênh cho thấy Multichannel dẫn đầu*
 
-
+\
 Khi xét ưu đãi trên từng kênh, Discount hiệu quả nhất trên cả Multichannel (21.15%) và Web (19.44%).
 
 *=> Khẳng định vai trò quan trọng của hai kênh này trong việc thúc đẩy chuyển đổi*
 
 ![28](https://github.com/user-attachments/assets/00ced097-2654-498d-9cb7-272ce6039514)
 
-Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả nhất tại Rural, trong khi Multichannel tiếp tục dẫn đầu tại Suburban và Urban. Tuy nhiên, phân tích thống kê cho thấy không có sự khác biệt lớn giữa các kênh (p-value > 0.05), mặc dù Multichannel nổi bật hơn trong việc tăng tỷ lệ chuyển đổi tại các khu vực Rural và Suburban.\
+Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả nhất tại Rural, trong khi Multichannel tiếp tục dẫn đầu tại Suburban và Urban. Tuy nhiên, phân tích thống kê cho thấy không có sự khác biệt lớn giữa các kênh (p-value > 0.05), mặc dù Multichannel nổi bật hơn trong việc tăng tỷ lệ chuyển đổi tại các khu vực Rural và Suburban.
 
 *=> Nhấn mạnh tầm quan trọng của việc tối ưu hóa Multichannel, đặc biệt tại các khu vực trọng điểm*
 
@@ -285,6 +294,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 - Web là kênh quan trọng thứ hai, đặc biệt khi triển khai ưu đãi Discount.
 - Phone có tiềm năng ở Rural, nhưng cần cải thiện hiệu quả tổng thể khi áp dụng ưu đãi.
 
+---
 ## [ANSWER] NHÓM KHÁCH HÀNG TIỀM NĂNG
 **[1] Nhóm khách hàng tiềm năng nhất:**
 - **Khu vực:** Urban
@@ -315,14 +325,13 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
   - Lần cuối mua cách đây: 7-12 tháng
 
 
-
-
+---
 # Xây dựng model dự đoán tỷ lệ khách hàng chuyển đổi
 ## Xác định dạng bài toán
 **Yêu cầu:** Dự đoán liệu khách hàng có chuyển đổi (conversion) hay không dựa trên các đặc trưng đầu vào.\
 **Dạng bài toán:** Phân loại nhị phân, với nhãn mục tiêu:
   - ```conversion = 0```: Không chuyển đổi
-  - ```conversion = 1:``` Chuyển đổi\
+  - ```conversion = 1:``` Chuyển đổi
     
 **Quan sát ban đầu:** Phân tích biểu đồ pairplot cho thấy các mối quan hệ giữa các biến độc lập và biến mục tiêu là mối quan hệ phi tuyến tính.
 
@@ -345,7 +354,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 **Mã hóa các biến phân loại:** Các cột zip_code, channel, offer được mã hóa bằng LabelEncoder để chuyển đổi thành dữ liệu số.
 **Tách và chia tập dữ liệu:** Tập dữ liệu ban đầu được tách thành 2 tập data khác nhau:
   - *data_1:* Sử dụng để huấn luyện mô hình và tối ưu hóa tham số.\
-        - Train: 10,500 mẫu\
+        - Train: 10,500 mẫu
         - Test: 2,100 mẫu
   - *data_2:* Sử dụng để kiểm tra độ chính xác của mô hình sau khi huấn luyện.
 
@@ -377,14 +386,17 @@ Tương tự như trên, sau khi xử lý imbalanced data thì sử dụng tập
   - **SMOTE method:  SMOTE**
       - random forest roc score on test:  0.5516274999999999
       - random forest f1 score on test:  0.07311827956989247
+
 \
   - **SMOTE method:  BorderlineSMOTE**
       - random forest roc score on test:  0.548045
       - random forest f1 score on test:  0.05472636815920398
+
 \
   - **SMOTE method:  SVMSMOTE**
       - random forest roc score on test:  0.5521325
       - random forest f1 score on test:  0.06829268292682927
+
 \
   - **SMOTE method:  ADASYN**
     - random forest roc score on test:  0.5502400000000001
