@@ -27,6 +27,7 @@ Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ l�
 ![1](https://github.com/user-attachments/assets/ab844b35-469f-4a0d-ac82-4535f6446bfb)
 
 Đáng chú ý, toàn bộ khách hàng chuyển đổi đều đã từng sử dụng các ưu đãi trước đây. Trong đó, 44.1% khách hàng chỉ sử dụng Buy One Get One, 38.8% chỉ sử dụng Discount, và 17.1% sử dụng cả hai loại ưu đãi.\
+\
 *=> Điều này cho thấy khách hàng chuyển đổi chủ yếu đến từ những người chỉ sử dụng một loại ưu đãi, đặc biệt là Buy One Get One.*\
 *=> Buy One Get One nên được đầu tư và phát triển trong các chiến dịch tiếp thị tiếp theo để thu hút và giữ chân khách hàng.*
 
@@ -47,6 +48,7 @@ Tỷ lệ chuyển đổi chung của khách hàng là 14.68%, trong khi tỷ l�
   - Kiểm tra xem liệu khách hàng đã từng sử dụng ưu đãi trước đây có chuyển đổi tốt hơn hay không?
   - Các yếu tố khác như history hay (recency) có làm thay đổi hiệu quả của từng loại offer không?
 
+\
 \
 Tỷ lệ chuyển đổi trung bình theo khu vực cho thấy Rural có hiệu quả cao nhất với 18.81%, vượt trội so với Suburban (13.99%) và Urban (13.90%).
 
@@ -321,73 +323,77 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 **Dạng bài toán:** Phân loại nhị phân, với nhãn mục tiêu:
   - ```conversion = 0```: Không chuyển đổi
   - ```conversion = 1:``` Chuyển đổi\
+    
 **Quan sát ban đầu:** Phân tích biểu đồ pairplot cho thấy các mối quan hệ giữa các biến độc lập và biến mục tiêu là mối quan hệ phi tuyến tính.
+
 ![Image](https://github.com/user-attachments/assets/59f7620d-c09d-4b63-87a3-1232fa3c4e4f)
 
 ## Tổng quan dữ liệu
-**Tổng số mẫu:** 64,000
+**Tổng số mẫu:** 64,000\
 **Phân phối nhãn mục tiêu:**
   - ```conversion = 0```: 54,606 mẫu (85.3%)
-  - ```conversion = 1:``` 9,394 mẫu (14.7%)
+  - ```conversion = 1:``` 9,394 mẫu (14.7%)\
+    
 **Nhận xét:** Dữ liệu mất cân bằng nghiêm trọng => Cần xử lý để cải thiện hiệu suất mô hình.
+
 <img width="559" alt="Image" src="https://github.com/user-attachments/assets/f1e069fa-720a-4937-8813-88604d656a57" />
 
 ## Tiền xử lý
 **Làm sạch dữ liệu (Data Cleaning):**
   - Kiểm tra và xử lý các giá trị bị thiếu.
   - Xác minh định dạng của các cột dữ liệu, đảm bảo tính nhất quán và phù hợp với các yêu cầu đầu vào của mô hình.
-  - Mã hóa các biến phân loại: Các cột zip_code, channel, offer được mã hóa bằng LabelEncoder để chuyển đổi thành dữ liệu số.
-**Tách và chia tập dữ liệu: Tập dữ liệu ban đầu được tách thành 2 tập data khác nhau:**
-  - *data_1:* Sử dụng để huấn luyện mô hình và tối ưu hóa tham số.
-        - Train: 10,500 mẫu
+**Mã hóa các biến phân loại:** Các cột zip_code, channel, offer được mã hóa bằng LabelEncoder để chuyển đổi thành dữ liệu số.
+**Tách và chia tập dữ liệu:** Tập dữ liệu ban đầu được tách thành 2 tập data khác nhau:
+  - *data_1:* Sử dụng để huấn luyện mô hình và tối ưu hóa tham số.\
+        - Train: 10,500 mẫu\
         - Test: 2,100 mẫu
   - *data_2:* Sử dụng để kiểm tra độ chính xác của mô hình sau khi huấn luyện.
 
 ## Lựa chọn mô hình và tối ưu hoá tham số
 - Chọn mô hình Random Forest
 - Tối ưu hóa siêu tham số của của mô hình Random Forest bằng kỹ thuật vét cạn. Tìm được ROC-AUC score cao nhất với tham số là:
-  ```n_estimators``` = 505
-  ```max_depth = 10
-  ```min_samples_split``` = 2
-  ```min_samples_leaf``` = 44
-  ```Random_state``` = 42
-  ```class_weight``` = "balanced"
-  ```max_features``` = “sqrt”
+  - ```n_estimators``` = 505
+  - ```max_depth = 10
+  - ```min_samples_split``` = 2
+  - ```min_samples_leaf``` = 44
+  - ```Random_state``` = 42
+  - ```class_weight``` = "balanced"
+  - ```max_features``` = “sqrt”
 - Gọi model_1 là mô hình trước khi huấn luyện với bộ tham số trên.
 
 ## Xử lý imbalanced data và huấn luyện mô hình
-Phương pháp xử lý imbalanced data
+Phương pháp xử lý imbalanced data:
   - **Naive Random Over-Sampling:** Sao chép ngẫu nhiên lớp thiểu số.
   - **SMOTE và các biến thể:** Tạo mẫu tổng hợp (BorderlineSMOTE, SVMSMOTE, ADASYN).
   - **Weighted Random Forest:** Áp dụng trọng số cho lớp thiểu số.
   
 ### Naive Random Over-Sampling
 Sau khi xử lý imbalanced data bằng phương pháp Naive Random Over-Sampling và sử dụng tập train để huấn luyện mô hình, thì kết quả nhận được là mô hình vừa được huấn luyện có cải thiện hơn so với ban đầu với:
-  - random forest roc score on test:  0.598495 (> 0,007 so với ban đầu)
-  - random forest f1 score on test:  0.1016949152542373 (> 0,003 so với ban đầu)
+  - *random forest roc score on test:  0.598495 (> 0,007 so với ban đầu)*
+  - *random forest f1 score on test:  0.1016949152542373 (> 0,003 so với ban đầu)*
 
 ### SMOTE và các biến thể
 Tương tự như trên, sau khi xử lý imbalanced data thì sử dụng tập train để huấn luyện mô hình. Kết quả nhận được như sau:
-  - SMOTE method:  SMOTE
+  - **SMOTE method:  SMOTE**
       - random forest roc score on test:  0.5516274999999999
       - random forest f1 score on test:  0.07311827956989247
-
-  - SMOTE method:  BorderlineSMOTE
+\
+  - **SMOTE method:  BorderlineSMOTE**
       - random forest roc score on test:  0.548045
       - random forest f1 score on test:  0.05472636815920398
-
-  - SMOTE method:  SVMSMOTE
+\
+  - **SMOTE method:  SVMSMOTE**
       - random forest roc score on test:  0.5521325
       - random forest f1 score on test:  0.06829268292682927
-
-  - SMOTE method:  ADASYN
+\
+  - **SMOTE method:  ADASYN**
     - random forest roc score on test:  0.5502400000000001
     - random forest f1 score on test:  0.07391304347826087
 
 ### Weighted Random Forest
 Đối với phương pháp này thì kết quả nhận được là:
-  - random forest roc score on test:  0.5919374999999999
-  - random forest f1 score on test:  0.0
+  - *random forest roc score on test:  0.5919374999999999*
+  - *random forest f1 score on test:  0.0*
 
 ## KẾT LUẬN
 - Phương pháp Naive Random Over-Sampling đạt hiệu suất tốt nhất trong các kỹ thuật xử lý mất cân bằng.
