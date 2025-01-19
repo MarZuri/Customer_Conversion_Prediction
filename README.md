@@ -332,7 +332,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 **Tổng số mẫu:** 64,000\
 **Phân phối nhãn mục tiêu:**
   - ```conversion = 0```: 54,606 mẫu (85.3%)
-  - ```conversion = 1:``` 9,394 mẫu (14.7%)\
+  - ```conversion = 1:``` 9,394 mẫu (14.7%)
     
 **Nhận xét:** Dữ liệu mất cân bằng nghiêm trọng => Cần xử lý để cải thiện hiệu suất mô hình.
 
@@ -353,7 +353,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 - Chọn mô hình Random Forest
 - Tối ưu hóa siêu tham số của của mô hình Random Forest bằng kỹ thuật vét cạn. Tìm được ROC-AUC score cao nhất với tham số là:
   - ```n_estimators``` = 505
-  - ```max_depth = 10
+  - ```max_depth``` = 10
   - ```min_samples_split``` = 2
   - ```min_samples_leaf``` = 44
   - ```Random_state``` = 42
