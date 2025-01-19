@@ -83,7 +83,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
   - Đã sử dụng: 19.42%
   - Chưa sử dụng: 18.07%
     
-\
+
 - Buy One Get One:
   - Đã sử dụng: 20.51%
   - Chưa sử dụng: 16.76%
@@ -100,7 +100,7 @@ Loại ưu đãi có tỷ lệ chuyển đổi cao nhất trong Rural là Discou
     
 => Đạt tỷ lệ cao nhất (33.33%)
 
-\
+
 - Buy One Get One (BOGO):
   - History: 501-1000(USD)
   - Recency: 4-6 tháng
@@ -143,7 +143,7 @@ Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Di
   - Đã sử dụng: 14.19%
   - Chưa sử dụng: 13.76%
 
-\
+
 - Buy One Get One:
   - Đã sử dụng: 15.75%
   - Chưa sử dụng: 11.85%
@@ -161,7 +161,7 @@ Trong Suburban, loại ưu đãi có tỷ lệ chuyển đổi cao nhất là Di
     
 *=> Đạt tỷ lệ cao nhất (100%)*
 
-\
+
 - Buy One Get One:
   - History: 1001-1500(USD)
   - Recency: 4-6 tháng
@@ -205,7 +205,7 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
   - Đã sử dụng: 13.99%
   - Chưa sử dụng: 13.80%
 
-\
+
 - Buy One Get One:
   - Đã sử dụng: 15.46%.
   - Chưa sử dụng: 12.00%
@@ -222,7 +222,7 @@ Urban có tỷ lệ chuyển đổi thấp nhất trong ba khu vực. Loại ưu
 
 *=> Cả 2 nhóm đều đạt tỷ lệ cao nhất (100%)*
 
-\
+
 - Buy One Get One:
   - History: 1501-2000(USD)
   - Recency: 7-12 tháng
@@ -313,7 +313,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 - **Kênh sử dụng:** Multichannel 
 - **Ưu đãi:** Discount, ưu tiên khách hàng đã sử dụng Buy One Get One trước đây
 - **Giá trị giao dịch trong quá khứ và lần cuối mua hàng cách đây:**
-  - Giá trị giao dịch: 1001-1500
+  - Giá trị giao dịch: 1001-1500 USD
   - Lần cuối mua cách đây: 4-6 tháng
  
 **[3] Nhóm khách hàng tiềm năng thứ ba:**
@@ -339,6 +339,7 @@ Xét theo khu vực, Web (20.50%) và Multichannel (20.70%) đều hiệu quả 
 
 ## Tổng quan dữ liệu
 **Tổng số mẫu:** 64,000\
+
 **Phân phối nhãn mục tiêu:**
   - ```conversion = 0```: 54,606 mẫu (85.3%)
   - ```conversion = 1:``` 9,394 mẫu (14.7%)
